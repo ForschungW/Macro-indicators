@@ -122,7 +122,8 @@ if st.button("Click for a surprise!"):
     # Generate AI analysis using Hugging Face
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
     
-    analysis_prompt = f"Analyze the following data trends:\n\n{df_combined[['period', 'value_cpi', 'value_pgi']].to_string(index=False)}"
+    analysis_prompt = f"Analyze the following macroeconomic indicators and their corresponding graphs according to standard rules for macroeconomic analysis, focusing on the Consumer Price Index (CPI) and Principal Global Indicators (PGI). Identify trends and patterns in the data \n\n{df_combined[['period', 'value_cpi', 'value_pgi']].to_string(index=False)} Assess the implications of changes in CPI on inflation and purchasing power. Evaluate the significance of the PGI in reflecting economic health and stability. Provide insights on the potential impact of these indicators on monetary policy and economic forecasting. Include your detailed analysis and observations. Thank you!"
+
     response = summarizer(analysis_prompt, max_length=150, min_length=30, do_sample=False)
     
     st.subheader("AI Analysis of the Graphs")
