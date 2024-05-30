@@ -4,7 +4,7 @@ Proiect final numit ”Combined outlook of selected macroeconomic indicators” 
 # Proiect: Combined outlook of selected macroeconomic indicators
 
 ## Descriere
-Acest proiect Python utilizează Streamlit pentru a afișa grafice ale datelor economice combinate de la două surse: CPI (Indicele Prețurilor de Consum) și PGI (Indicele Prețurilor Producătorilor), extrase de pe DBnomics și care provin de la Fondul Monetar Internațional. Aplicația permite utilizatorilor să selecteze frecvența, zona de referință și indicatorii pentru fiecare sursă. Datele sunt apoi afișate într-un grafic combinat, iar un model AI analizează graficul. Afișarea datelor depinde de disponibilitatea acestora de la sursă.
+Acest proiect Python utilizează Streamlit pentru a afișa grafice ale datelor economice combinate de la două surse: CPI (Indicele Prețurilor de Consum) și PGI (Indicatori Principali Globali), extrase de pe DBnomics și care provin de la Fondul Monetar Internațional. Aplicația permite utilizatorilor să selecteze frecvența, zona de referință și indicatorii pentru fiecare sursă. Datele sunt apoi afișate într-un grafic combinat, iar un model AI analizează graficul. Afișarea datelor depinde de disponibilitatea acestora de la sursă.
 
 ## Instalare
 1. **Clonați repository-ul:**
@@ -14,7 +14,7 @@ Acest proiect Python utilizează Streamlit pentru a afișa grafice ale datelor e
    ```
 
 2. **Instalați dependențele:**
-   Navigați la directorul proiectului în terminal.
+   Accesați directoriul proiectului în terminal.
    Rulați următoarea comandă pentru a instala toate dependențele
    ```bash
    pip install -r requirements.txt
